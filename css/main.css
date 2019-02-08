@@ -1,0 +1,195 @@
+/* resources from: https://www.w3schools.com/css/css_navbar.asp*/
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    font-family: Arial;
+  }
+  
+  /* resources from: https://www.w3schools.com/css/css_navbar.asp */
+.navbar a {
+    float: right;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 60px;
+    text-decoration: none;
+  }
+
+  
+  /* resources from: https://www.w3schools.com/css/css_navbar.asp*/
+.dropdown {
+    float: right;
+    text-align: center;
+    overflow: hidden;
+  }
+
+.logo {
+    float: left;
+    overflow: visible;
+  
+  }
+
+  
+  /* resources from: https://www.w3schools.com/css/css_navbar.asp*/
+.dropdown .dropbtn {
+    font-size: 16px; 
+    text-align: inherit;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 60px;
+    background-color: inherit;
+    font-family: inherit; 
+  }
+  
+  /* resources from: https://www.w3schools.com/css/css_navbar.asp*/
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color:rgb(166,25,46);
+  }
+  
+  /*resources from: https://www.w3schools.com/css/css_navbar.asp */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    text-align: inherit;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* resources from: https://www.w3schools.com/css/css_navbar.asp */
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+
+  /* resources from: https://www.w3schools.com/css/css_navbar.asp */
+.dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  /* resources from: https://www.w3schools.com/css/css_navbar.asp */
+.dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+.button{
+	color: white;
+	background-color: rgb(166,25,46);
+	font-size: 1rem;
+	padding: 0.3rem 0.3rem;
+	text-decoration: none;
+	transition-property: background-color;
+	transition-duration: 0.5s;
+  transition-timing-function: ease-out;
+  padding: 15px;
+}
+
+.button:hover{
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.521);
+}
+
+body {
+	font-family: Helvetica, Verdana, sans-serif;
+	margin: .5rem;
+	font-size: 1.25rem;
+}
+
+h1 {
+	font-size: 2rem;
+	margin-bottom: 0;
+}
+
+@media only screen and (max-width: 1183px) {
+h1,p {text-align:center;}
+}
+
+h2 {
+	font-size: 1.8rem;
+	margin-bottom: 0;
+}
+
+h3 {
+	font-size: 1.6rem;
+	margin-bottom: 0;
+}
+
+p, ol, ul {
+    font-size: 1.2rem;
+}
+
+.content{
+    background:grey;
+}
+
+.contentA{
+  float: left;
+}
+/* resources from: https://www.w3schools.com/css/css_rwd_grid.asp */
+* {
+  box-sizing: border-box;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+@media only screen and (max-width: 1183px) {
+  .col-3 {
+    width:100%;}
+  }
+.col-4 {width: 33.33%;}
+@media only screen and (max-width: 1183px) {
+  .col-4 {
+    width:100%;}
+  }
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+@media only screen and (max-width: 1183px) {
+  .col-8 {
+    width:100%;
+  }
+  }
+.col-9 {width: 75%;
+float:right;}
+@media only screen and (max-width: 1183px) {
+  .col-9 {
+    width:100%;
+  }
+  }
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+.bol-12 {width:100%;} /* used to set footer*/
+
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+#lineheader{
+vertical-align: text-top;
+}
+
+.padding{
+padding-top: 60px;
+}
+
+@media only screen and (max-width:1183px){
+  .navbar a, .dropdown, .dropbtn, .dropdown-content, .dropdown-content a{
+    text-align:center;
+    width:100%;
+    position:static; /* resources from: https://www.w3schools.com/cssref/pr_class_position.asp*/
+  }}
